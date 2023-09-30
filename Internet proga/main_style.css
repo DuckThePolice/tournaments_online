@@ -1,0 +1,15 @@
+body
+{
+    padding-top:50px;
+    z-index: 5;
+}
+.nav
+{
+    width: 10;
+    float:left;
+}
+.tournaments
+{
+    font-family: OCR A Std, monospace;
+    font-size: x-large;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Регистрация</title>
+</head>
+
+<header>
+  <div class="row">
+    <nav class="navbar navbar-expand-bg fixed-top bg-body-tertiary">
+      <a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none" href="index.html">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+        </svg>
+        Название сайта
+      </a>
+  
+      <div class="col-md-8 text-end">
+        <a href="Login_page.html">
+          <button type="button" class="btn btn-outline-primary me-2">Логин</button>
+        </a>
+        <a href="Register_page.html">
+          <button type="button" class="btn btn-primary">Регистрация</button>
+        </a>
+        
+      </div>
+  
+      <div class="flex-shrink-0 dropstart" style="margin-right: 5px;">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="LK.html">Личный кабинет</a></li>
+          <li><a class="dropdown-item" href="#">Настройки</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Выйти</a></li>
+        </ul>
+      </div>
+  
+      
+  </div>
+ 
+  </nav>
+</header>
+
+
+<body>
+    <section class="h-100 h-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-8 col-xl-6">
+              <div class="card rounded-3">
+                <img src="https://img-s3.onedio.com/id-5ef468a2cfd92048092cd8c8/rev-0/w-900/h-506/f-jpg/s-160e46ad00323e31509393de3765d8ebeeccd800.jpg"
+                  class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                  alt="Sample photo">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Регистрация</h3>
+      
+                  <form class="px-md-2">
+      
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1q" class="form-control" />
+                      <label class="form-label" for="form3Example1q">E-mail</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1q" class="form-control" />
+                      <label class="form-label" for="form3Example1q">Логин</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1q" class="form-control" />
+                      <label class="form-label" for="form3Example1q">Пароль</label>
+                    </div>
+
+                    <div class="mb-4">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Какие игры вас интересуют?
+                      </button>
+                      <ul class="dropdown-menu text-small shadow">
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">League of Legends
+                            </label>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Hearthstone
+                            </label>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Counter strike 2
+                            </label>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Dota 2
+                            </label>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Magic the gathering arena
+                            </label>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox">League of Legends
+                            </label>
+                          </div>
+                        </li>
+
+      
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1q" class="form-control" />
+                      <label class="form-label" for="form3Example1q">Код подтверждения (должен был придти вам на почту)</label>
+                    </div>
+
+                    <div class="checkbox" >
+                      <label>
+                          <input type="checkbox">Я принимаю условия пользовательского соглашения
+                      </label>
+                    </div>
+                    </div>
+      
+                    <button type="submit" class="btn btn-success btn-lg mb-1">Зарегистрироваться</button>
+      
+                  </form>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>    
+</body>
+</html>l

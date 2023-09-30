@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Онлайн турниры</title>
+  <link rel="stylesheet" href="main_style.css">
+</head>
+
+<header>
+  <div class="row">
+    <nav class="navbar navbar-expand-bg fixed-top bg-body-tertiary">
+      <a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none" href="index.html">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+        </svg>
+        Название сайта
+      </a>
+  
+      <div class="col-md-8 text-end">
+        <a href="Login_page.html">
+          <button type="button" class="btn btn-outline-primary me-2">Логин</button>
+        </a>
+        <a href="Register_page.html">
+          <button type="button" class="btn btn-primary">Регистрация</button>
+        </a>
+        
+      </div>
+  
+      <div class="flex-shrink-0 dropstart" style="margin-right: 5px;">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="LK.html">Личный кабинет</a></li>
+          <li><a class="dropdown-item" href="#">Настройки</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Выйти</a></li>
+        </ul>
+      </div>
+  
+      
+  </div>
+ 
+  </nav>
+</header>
+
+<aside class="navbar fixed-top" style="margin-top:50px; z-index: 4;">
+  <div class="d-flex flex-shrink-0" style="width: 4.5rem;">
+    <ul class="nav nav-pills text-center">
+      <li class="nav-item">
+        <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="Home">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Home">
+            <use xlink:href="#home"></use>
+          </svg>
+          <img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png"
+            class="card-img-top">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Dashboard">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard">
+            <use xlink:href="#speedometer2"></use>
+          </svg>
+          <img src="https://seeklogo.com/images/R/Random_Task-logo-D9634FB1A0-seeklogo.com.gif"
+            class="card-img-top">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Orders">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Orders">
+            <use xlink:href="#table"></use>
+          </svg>
+          <img src="https://seeklogo.com/images/P/pharmacy-logo-7092A6C9DF-seeklogo.com.png" class="card-img-top">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Products">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Products">
+            <use xlink:href="#grid"></use>
+          </svg>
+          <img src="https://seeklogo.com/images/R/random-implementos-logo-A1D3C7ADFF-seeklogo.com.png" class="card-img-top">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-original-title="Customers">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Customers">
+            <use xlink:href="#people-circle"></use>
+          </svg>
+          <img src="https://seeklogo.com/images/S/skull-motocross-logo-EB683C5E5E-seeklogo.com.png" class="card-img-top">
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<ul class="nav nav-tabs mb-3" role="tablist" style="z-index:10; margin-left: 5%;">
+  <li class="nav-item" role="presentation" style="z-index: 10;">
+    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true"> Предстоящие турниры </a>
+  </li>
+  <li class="nav-item" role="presentation" style="z-index: 10;">
+    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false"> Прошедшие турниры </a>
+  </li>
+</ul>
+<div class="tab-content" id="tab-content">
+  <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+    <div class="text-center fs-1">Предстоящие турниры</div>
+  <div class="row" style="margin-left: 5%;" >
+
+    <div class="dropdown" style="z-index: 10;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Сортировка
+      </button>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Популярность ↑</a></li>
+        <li><a class="dropdown-item" href="#">Популярность ↓</a></li>
+        <li><a class="dropdown-item" href="#">Призовой фонд ↑</a></li>
+        <li><a class="dropdown-item" href="#">Призовой фонд ↓</a></li>
+        <li><a class="dropdown-item" href="#">Количество участников ↑</a></li>
+        <li><a class="dropdown-item" href="#">Количество участников ↓</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">По умолчанию</a></li>
+      </ul>
+    </div>
+
+    
+
+
+    <div class="col-md-12 container-fluid row justify-content-center">
+      <div class="table-responsive" style="z-index: 5;">
+        <table class="table table-striped table-sm tournaments">
+          <thead>
+            
+          </thead>
+          <tbody class="text-center align-middle">
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2">Формат: best of 5, single elimination </td>
+              <td ><a href="Tournament_register_page.html"><button style="width: 100%; ">Регистрация</button> </a></td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+              
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2">Формат: best of 5, single elimination </td>
+              <td><button style="width: 100%;">Регистрация</button></td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+              
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2">Формат: best of 5, single elimination </td>
+              <td><button style="width: 100%;">Регистрация</button></td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+              
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2">Формат: best of 5, single elimination </td>
+              <td><button style="width: 100%;">Регистрация</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> </div>
+  <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1"><div class="text-center fs-1">Прошедшие турниры</div>
+  <div class="row" style="margin-left: 5%;" >
+
+    <div class="dropdown" style="z-index: 5;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Сортировка
+      </button>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Популярность ↑</a></li>
+        <li><a class="dropdown-item" href="#">Популярность ↓</a></li>
+        <li><a class="dropdown-item" href="#">Призовой фонд ↑</a></li>
+        <li><a class="dropdown-item" href="#">Призовой фонд ↓</a></li>
+        <li><a class="dropdown-item" href="#">Количество участников ↑</a></li>
+        <li><a class="dropdown-item" href="#">Количество участников ↓</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">По умолчанию</a></li>
+      </ul>
+    </div>
+
+    
+
+
+    <div class="col-md-12 container-fluid row justify-content-center">
+      <div class="table-responsive">
+        <table class="table table-striped table-sm tournaments">
+          <thead>
+            
+          </thead>
+          <tbody class="text-center align-middle">
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="3">Формат: best of 5, single elimination </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="3">Формат: best of 5, single elimination </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="3">Формат: best of 5, single elimination </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="text-center align-middle"><img src="https://seeklogo.com/images/L/league-of-legends-logo-13AAC5B212-seeklogo.com.png" height="40" width="40" ></td>
+              <td>28.09.2031</td>
+              <td>10000$ <br>Random cup</td>
+              <td>500 участников</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="3">Формат: best of 5, single elimination </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> </div>
+</div>
+
+
+
+</html>
